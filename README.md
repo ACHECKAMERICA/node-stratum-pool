@@ -1,4 +1,5 @@
-## This repo is looking for maintainers! Please reach out if interested.
+## BitcoinV SOLO mining instructions
+## After reading below, open the file index_STRATUM_MINING.js above and read the notes at the bottom.
 
 --------
 
