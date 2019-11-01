@@ -20,7 +20,7 @@ Usage
 ```bash
 cd
 git clone https://github.com/bitcoinVBR/node-stratum-pool.git node_modules/stratum-pool
-cd node_modules
+cd node_modules/stratum-pool
 npm update npm -g
 npm update
 ```
