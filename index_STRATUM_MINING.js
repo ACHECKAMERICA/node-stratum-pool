@@ -33,7 +33,7 @@ var pool = Stratum.createPool({
     /* Some miner apps will consider the pool dead/offline if it doesn't receive anything new jobs
        for around a minute, so every time we broadcast jobs, set a timeout to rebroadcast
        in this many seconds unless we find a new job. Set to zero or remove to disable this. */
-    "jobRebroadcastTimeout": 135,
+    "jobRebroadcastTimeout": 60,
 
     //instanceId: 37, //Recommend not using this because a crypto-random one will be generated
 
@@ -67,12 +67,12 @@ var pool = Stratum.createPool({
        optional and will only be used for the ports you configure it for. */
     "ports": {
         "3333": { //A port for your miners to connect to
-            "diff": 20000, //the pool difficulty for this port
+            "diff": 5000, //the pool difficulty for this port
 
             /* Variable difficulty is a feature that will automatically adjust difficulty for
                individual miners based on their hashrate in order to lower networking overhead */
             "varDiff": {
-                "minDiff": 20000, //Minimum difficulty
+                "minDiff": 5000, //Minimum difficulty
                 "maxDiff": 225000, //Network difficulty will be used if it is lower than this
                 "targetTime": 25, //Try to get 1 share per this many seconds
                 "retargetTime": 40, //Check to see if we should retarget every this many seconds
@@ -183,7 +183,6 @@ Copy this file 'index_STRATUM_MINING.js' and copy to:
 
 ~/node_modules/stratum-pool
 
-install NODE
 
 Modify the above code to add YOUR BitcoinV address:
 "address": "1GPLaBLsczMDDNSueiwbxouGDfLaoxhopq"
