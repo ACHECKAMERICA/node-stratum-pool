@@ -29,6 +29,7 @@ git clone https://github.com/bitcoinVBR/node-stratum-pool.git node_modules/strat
 cd node_modules/stratum-pool
 sudo npm update npm -g
 sudo apt install g++ make
+npm install bignum
 npm update
 ```
 
