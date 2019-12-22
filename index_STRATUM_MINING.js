@@ -218,9 +218,9 @@ Restart the BitcoinV wallet and perform the above steps again.
 
 Block rewards will now be at 2x50 = 100 BTCV.
 
-Get greedy and change to any number between 1 and 1048576, should be a power of 2.
+Get greedy and change to any number between 1 and 16, should be a power of 2.
 
-The largest reward possible is 50 x 1048576 = about 50 Million BTCV
+The largest reward possible is 50 x 16 = 800 BTCV
 
 Good luck!
 
